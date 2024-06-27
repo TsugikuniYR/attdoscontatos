@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>]
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Manager</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <div class="container" id="appContainer">
+      <header>
+        <h1>Contacts</h1>
+        <div class="header-buttons">
+          <button id="themeToggle" class="btn theme-toggle-btn">Toggle Theme</button>
+        </div>
+      </header>
+      <main>
+        <form id="contactForm">
+          <input type="text" id="name" class="input-field" placeholder="Name" required="">
+          <input type="text" id="phone" class="input-field" placeholder="Phone" required="">
+          <input type="email" id="email" class="input-field" placeholder="Email" required="">
+          <div style="display: flex; flex-direction: column;">
+            <button type="button" class="btn search-btn" id="searchButton">Search</button>
+            <input type="text" id="searchName" class="input-field" placeholder="Search by Name">
+          </div>
+          <button type="submit" class="btn">Add Contact</button>
+        </form>
+        <ul id="contactList" class="contact-list"></ul>
+      </main>
+    </div>
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
